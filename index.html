@@ -9,24 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Currency Convertor</h1>
+        <h1>Currency Converter</h1>
         <div class="box">
             <div class="left-box">
-                <select name="currency" class="currency">
-                    
-                </select>
-                <input type="number" name="" id="input">
+                <select name="currency" class="currency"></select>
+                <input type="number" id="input" placeholder="Enter amount">
             </div>
             <div class="right-box">
                 <select name="currency" class="currency"></select>
-                <input type="number" name="" id="result">
+                <input type="number" id="result" readonly>
             </div>
         </div>
         <div class="btn">
             <button id="btn">Convert</button>
         </div>
-        
+
+        <!-- Error message placeholder -->
+        <p id="error" style="color:red; font-weight:bold; text-align:center; margin-top:10px;"></p>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
